@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Lom2mlr by ggauthier</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Lom2mlr</h1>
+        <h2>Convert LOM metadata to MLR data elements</h2>
+        <a href="https://github.com/ggauthier/lom2mlr" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="project-lom2mlr" class="anchor" href="#project-lom2mlr" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Lom2MLR</h1>
+
+<p>This project aims to convert Learning Object Metadata, <a href="http://ltsc.ieee.org/wg12/files/LOM_1484_12_1_v1_Final_Draft.pdf">IEEE 1484.12.1-2002</a>
+into Metadata for Learning Resources, <a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=50772">ISO/IEC 19788-1:2011</a>.
+Note that part 1 of the standard is <a href="http://standards.iso.org/ittf/PubliclyAvailableStandards/">publically available</a>.
+This tool is developed by 
+<a href="http://www.gtn-quebec.org/">Groupe de travail québécois sur les normes et standards TI pour l’apprentissage, l’éducation et la formation</a>, and as such we want to cover LOM files that follow the <a href="http://www.gtn-quebec.org/rea/wp-content/blogs.dir/6/files/2010/11/pdf_Profil_Normetic_1.2_officiel.pdf">Normetic 1.2 profile</a>.</p>
+
+<p>DOCUMENT TO BE UPDATED (Doesn't conform to MLR as it stand)</p>
+
+<p>This project aims to convert Learning Object Metadata, <a href="http://ltsc.ieee.org/wg12/files/LOM_1484_12_1_v1_Final_Draft.pdf">IEEE 1484.12.1-2002</a> into Metadata for Learning Resources, <a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=50772">ISO/IEC 19788-1:2011</a> Note that part 1 of the standard is <a href="http://standards.iso.org/ittf/PubliclyAvailableStandards/">publically available</a>. This tool is developed by <a href="http://www.gtn-quebec.org/">Groupe de travail québécois sur les normes et standards TI pour l’apprentissage, l’éducation et la formation</a>, and as such we want to cover LOM files that follow the <a href="http://www.gtn-quebec.org/rea/wp-content/blogs.dir/6/files/2010/11/pdf_Profil_Normetic_1.2_officiel.pdf">Normetic 1.2 profile</a> </p>
+
+<p>More documentation is available <a href="http://lom2mlr.readthedocs.org/en/latest/">here</a>.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>The documentation contains installation and usage instructions for the command-line tool. There is also a web application version available <a href="http://www.gtn-quebec.org/lom2mlr/index.cgi">here</a>. This web application is available as a web form, or as a RESTful service (at the same address). In that second case, the LOM data can be POSTED, and optional arguments can be passed as a query string.</p>
+
+<p>The command-line tool requires many components, as detailed in the instructions, but packaged binary applications are available <a href="http://www.gtn-quebec.org/lom2mlr/lom2mlr.exe">for Windows</a> and <a href="http://www.gtn-quebec.org/lom2mlr/lom2mlr.gz">for Mac OS X</a>. Put it in your executable PATH, and type <code>lom2mlr --help</code> for instructions.</p>
+
+<h2>
+<a id="rationale" class="anchor" href="#rationale" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rationale</h2>
+
+<p>Conversion of LOM to MLR is not a linear process, and contains many heuristics. These heuristics are described in the <a href="http://www.gtn-quebec.org/lom2mlr/rationale.html">rationale</a> document.  The <code>rationale.html</code> file is generated from the <code>rationale.md</code> markdown file, using the <code>lom2mlr_markdown</code> script included in this package.</p>
+
+<p>Besides describing the heuristics, the <code>rationale.md</code> file contains testable fragments of LOM to MLR conversion. Use the <code>nosetest</code> command to execute those tests.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/ggauthier/lom2mlr/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/ggauthier/lom2mlr/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/ggauthier/lom2mlr"></a> is maintained by <a href="https://github.com/ggauthier">ggauthier</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
